@@ -18,5 +18,9 @@ class Insumo extends Conexion{
         $this->insumos_proveedor = $args['insumos_proveedor'] ?? '';
         $this->insumos_precio = $args['insumos_precio'] ?? '';
     }
-
+    public function guardar(){
+        $sql = "INSERT INTO insumos(insumos_nombre, insumos_existencia, insumos_marca, insumos_proveedor, insumos_precio) values('$this->insumos_nombre','$this->insumos_existencia', '$this->insumos_marca', '$this->insumos_proveedor', '$this->insumos_precio')";
+        $resultado = self::ejecutar($sql);
+        return $resultado;
+    }
 }
