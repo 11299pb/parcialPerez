@@ -34,7 +34,7 @@
             </div>
             <div class="row mb-3">
                 <div class="col">
-                    <label for="insumos_proveedor">Ingrese Nombre del Proveedor</label>
+                    <label for="insumos_proveedor">Ingrese Primer Nombre y Primer Apellido del Proveedor</label>
                     <input type="text" name="insumos_proveedor" id="insumos_proveedor" class="form-control">
                 </div>
             </div>
